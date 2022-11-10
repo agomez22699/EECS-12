@@ -45,7 +45,7 @@ def main():
         error99.draw(window)
         error99.setFill("Red")
         rect1input=(rect1.getText())
-        if rect1input is "C" or rect1input is "F" or rect1input is "K":
+        if rect1input == "C" or rect1input == "F" or rect1input == "K":
             error99.setText(" ")
         else:           
             error99.setText("Please enter either C, F, or K")
@@ -62,7 +62,7 @@ def main():
         if (rect2input)<0 or (rect2input)>50 :           
             error91.setText("Temperature should be less than 50 and greater than 0")
             #conversion of input/ print into respextive boxes
-        if rect1input is "C":
+        if rect1input == "C":
             C=rect2input
             K=C + 273.15
             F=((C)*(9/5))+32
@@ -72,7 +72,7 @@ def main():
             tempincresult.draw(window)
             tempinfresult.draw(window)
             tempinkresult.draw(window)
-        if rect1input is "F":
+        if rect1input == "F":
             F=rect2input
             C=(F-32)*(5/9)
             K=C + 273.15
@@ -82,7 +82,7 @@ def main():
             tempincresult.draw(window)
             tempinfresult.draw(window)
             tempinkresult.draw(window)
-        if rect1input is "K":
+        if rect1input == "K":
             K=rect2input
             C=K - 273.15
             F=(C)*(9/5)+32
