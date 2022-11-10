@@ -59,7 +59,7 @@ def main():
         error91 = Text(Point(150,470), " ")
         error91.draw(window)
         error91.setFill("Red")
-        if (rect2input)<0 or (rect2input)>50 :           
+        if (rect2input)<0 or (rect2input)>50 and rect1input == "K":           
             error91.setText("Temperature should be less than 50 and greater than 0")
             #conversion of input/ print into respextive boxes
         if rect1input == "C":
