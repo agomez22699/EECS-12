@@ -54,7 +54,10 @@ def main():
     roof.draw(window)
     roof.setFill("Green")
     roof.setOutline("Brown")
-    
+    textbox4 = Text(lower, "Click to close Window")
+    textbox4.draw(window)
+    p6=window.getMouse()
+    window.close()
     
 main()
     
